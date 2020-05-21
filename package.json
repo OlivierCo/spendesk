@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "wallet": "yarn workspace wallet run start",
+    "user": "yarn workspace user run start",
+    "card": "yarn workspace card run start",
+    "gateway": "yarn workspace gateway run start",
+    "start": "concurrently --kill-others-on-fail \"yarn wallet\" \"yarn user\" \"yarn card\" \"yarn gateway\""
+  },
+  "dependencies": {
+    "concurrently": "5.2.0"
+  }
+}

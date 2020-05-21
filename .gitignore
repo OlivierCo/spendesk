@@ -1,0 +1,39 @@
+.*.env
+
+# OSX
+#
+.DS_Store
+
+# Visual Studio Code
+#
+.vscode/**/*
+
+# Jest
+coverage
+junit.xml
+.jest
+
+# Logs
+logs
+*.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dependencies
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Editor
+.editorconfig
+
+# Jest cache
+*.jest
+
+# Build folder
+dist/
+
+# IntelliJ
+.idea
