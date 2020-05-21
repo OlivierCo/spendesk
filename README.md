@@ -49,7 +49,7 @@ Once you have launched all the services you can go to [localhost:4000/graphql](h
 
 ### Card
 
-Available services:
+Available API:
 
 * createCard - create a card
 * blockCard - block a card
@@ -57,7 +57,7 @@ Available services:
 
 ### User
 
-Available services:
+Available API:
 
 * getUsers - return a list of users
 * getUserById - return a user by it's user_id
@@ -65,7 +65,7 @@ Available services:
 
 ### Wallet
 
-Available services:
+Available API:
 
 * createWallet - create a wallet
 * getWallets - return a list of wallets
