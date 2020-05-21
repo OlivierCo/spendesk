@@ -4,18 +4,20 @@ Before doing anything, I would like to mention that I didn't complete the whole 
 
 Note:
 
-*With more time I would have completed the whole test obviously plus "dockerizing" it properly. I think linking those microservices with an event bus system such as rabbitMQ or zeroMQ would be interesting as well and probably use Redis for caching data and faster process.*
+_With more time I would have completed the whole test obviously plus "dockerizing" it properly. I think linking those microservices with an event bus system such as rabbitMQ or zeroMQ would be interesting as well and probably use Redis for caching data and faster process._
 
 Gateway is an API gateway behind a GraphQL layer I thought that would be a good fit for this kind of project as it comes with playground which plays multiple roles (documentation and a interface for testing APIs)
 
 ---
+
 ## MongoDB
 
 In order to make this working properly you must have mongodb installed locally.
 
 Useful links:
-* https://zellwk.com/blog/install-mongodb/
-* https://zellwk.com/blog/local-mongodb/
+
+- https://zellwk.com/blog/install-mongodb/
+- https://zellwk.com/blog/local-mongodb/
 
 Once you have installed correctly your mongodb on you machine run the following command:
 
@@ -43,32 +45,30 @@ Once you have launched all the services you can go to [localhost:4000/graphql](h
 2. once your first user is created you can create a wallet `createWallet` needs the `user_id` and a currency <'EUR', 'USD', 'GPB'>
 3. now you can create your card `createCard` needs a `wallet_id` and a currency <'EUR', 'USD', 'GPB'>
 
----
-
 ## Microservices
 
 ### Card
 
 Available API:
 
-* createCard - create a card
-* blockCard - block a card
-* getCardById - return a card by it's card_id
+- createCard - create a card
+- blockCard - block a card
+- getCardById - return a card by it's card_id
 
 ### User
 
 Available API:
 
-* getUsers - return a list of users
-* getUserById - return a user by it's user_id
-* createUser - create a user
+- getUsers - return a list of users
+- getUserById - return a user by it's user_id
+- createUser - create a user
 
 ### Wallet
 
 Available API:
 
-* createWallet - create a wallet
-* getWallets - return a list of wallets
+- createWallet - create a wallet
+- getWallets - return a list of wallets
 
 ### Gateway
 
