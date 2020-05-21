@@ -6,7 +6,7 @@ Note:
 
 _With more time I would have completed the whole test obviously plus "dockerizing" it properly. I think linking those microservices with an event bus system such as rabbitMQ or zeroMQ would be interesting as well and probably use Redis for caching data and faster process._
 
-Gateway is an API gateway behind a GraphQL layer I thought that would be a good fit for this kind of project as it comes with playground which plays multiple roles (documentation and a interface for testing APIs)
+Gateway Microservice is an API gateway behind a GraphQL layer I thought that would be a good fit for this kind of project as it comes with playground which plays multiple roles (documentation and an interface for testing APIs)
 
 ---
 
